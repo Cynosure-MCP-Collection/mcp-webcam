@@ -1,0 +1,43 @@
+{
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "io.github.andreasjhagen/webcam",
+    "description": "MCP server for capturing still images from an attached webcam",
+    "version": "1.0.0",
+    "icons": [
+        {
+            "src": "https://raw.githubusercontent.com/andreasjhagen/Cynosure-MCPs/main/mcp-webcam/icon.png",
+            "mimeType": "image/png"
+        }
+    ],
+    "packages": [
+        {
+            "registryType": "npm",
+            "identifier": "@cynosure-mcp/webcam",
+            "version": "1.0.0",
+            "transport": {
+                "type": "stdio"
+            },
+            "environmentVariables": [
+                {
+                    "name": "WEBCAM_DEVICE",
+                    "description": "Default webcam device to use. On Windows: the device name (e.g. \"Integrated Camera\"). On macOS: the AVFoundation index (e.g. \"0\"). On Linux: the device path (e.g. \"/dev/video0\"). Leave empty to auto-detect the first available camera.",
+                    "isRequired": false,
+                    "format": "string",
+                    "isSecret": false
+                },
+                {
+                    "name": "WEBCAM_OUTPUT_DIR",
+                    "description": "Directory where captured images are saved. Defaults to a temporary directory.",
+                    "isRequired": false,
+                    "format": "string",
+                    "isSecret": false
+                }
+            ]
+        }
+    ],
+    "repository": {
+        "url": "https://github.com/andreasjhagen/Cynosure-MCPs",
+        "source": "github",
+        "subfolder": "mcp-webcam"
+    }
+}
