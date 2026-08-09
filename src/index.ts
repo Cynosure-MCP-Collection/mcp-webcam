@@ -206,6 +206,7 @@ const server = new McpServer({
 server.registerTool(
     'list_webcam_devices',
     {
+        annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false },
         description: 'List all available webcam / video capture devices on this system. Use the returned device name (Windows) or index (macOS) with capture_webcam_image.',
         inputSchema: {},
     },
@@ -235,6 +236,7 @@ server.registerTool(
 server.registerTool(
     'capture_webcam_image',
     {
+        annotations: { readOnlyHint: false, destructiveHint: true, idempotentHint: false, openWorldHint: false },
         description: 'Capture a still image from an attached webcam. Returns the image inline and saves it to disk. Call list_webcam_devices first if you need to select a specific camera.',
         inputSchema: {
             device: z.string().optional().describe(
