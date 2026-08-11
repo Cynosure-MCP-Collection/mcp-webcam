@@ -1,7 +1,7 @@
 {
     "name": "@cynosure-mcp/webcam",
     "mcpName": "io.github.andreasjhagen/webcam",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "MCP server for capturing still images from an attached webcam",
     "type": "module",
     "main": "dist/index.js",
