@@ -38,5 +38,13 @@
         "camera",
         "image-capture",
         "ffmpeg"
-    ]
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Cynosure-MCP-Collection/mcp-webcam.git"
+    },
+    "homepage": "https://github.com/Cynosure-MCP-Collection/mcp-webcam#readme",
+    "bugs": {
+        "url": "https://github.com/Cynosure-MCP-Collection/mcp-webcam/issues"
+    }
 }
