@@ -2,10 +2,10 @@
     "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
     "name": "io.github.andreasjhagen/webcam",
     "description": "MCP server for capturing still images from an attached webcam",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": [
         {
-            "src": "https://unpkg.com/@cynosure-mcp/webcam@1.0.1/icon.png",
+            "src": "https://unpkg.com/@cynosure-mcp/webcam@1.0.2/icon.png",
             "mimeType": "image/png"
         }
     ],
@@ -13,7 +13,7 @@
         {
             "registryType": "npm",
             "identifier": "@cynosure-mcp/webcam",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "transport": {
                 "type": "stdio"
             },
